@@ -1,0 +1,48 @@
+{
+  "name": "bookstore-api",
+  "version": "1.0.0",
+  "description": "A NestJS API for managing a bookstore.",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "nest start",
+    "build": "nest build",
+    "test": "jest",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/jwt": "^8.0.0",
+    "@nestjs/passport": "^8.0.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "rxjs": "^7.0.0",
+    "typeorm": "^0.2.34",
+    "class-validator": "^0.13.1",
+    "class-transformer": "^0.4.0",
+    "bcrypt": "^5.0.1",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^8.0.0",
+    "jest": "^27.0.0",
+    "ts-jest": "^27.0.0",
+    "ts-loader": "^8.0.0",
+    "typescript": "^4.3.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
